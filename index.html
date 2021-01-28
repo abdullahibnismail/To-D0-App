@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Adding New Task -->
+        <div>
+            <h1>To-Do List</h1>
+            <h4>ADD NEW TASK</h4>
+            <label for="text">Task</label>
+            <input type="text" name="" id="userTask" class="inputbox" value="">
+            <p id="para"></p>
+            <label for="date">Date</label>
+            <input type="date" class="datebox" id="taskDate">
+            <button id=addbutton onclick="addUserTask()">+</button>
+        </div>
+        <!-- All Task Lists -->
+        <div>
+            <table class="tablebox">
+                <tr class="tablerow">
+                    <td>DATE</td>
+                    <td>TASK</td>
+                    <td>EDIT</td>
+                </tr>
+                <tr>
+                    <td id="addDate"></td>
+                    <td id="addTask"></td>
+                    <td id="delTask"><button onclick="deleteTask()">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
